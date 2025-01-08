@@ -5,7 +5,12 @@ while True:
     sa = input("사용자 종류를 입력하세요:\n1. 소비자 \n2. 주인")
     if sa == "1":
         print("마시고 싶은 음료는 무엇인가요?")
+        
+
+
     elif sa == "2":
         print("마시고 싶은 음료는 무엇인가요?")
+        
+
     else:
         print("잘못된 값입니다.")
