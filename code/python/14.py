@@ -59,13 +59,43 @@ for i in range(4):
     print()
 
 # 실습 4
-for i in range(5):
-    for j in range(5-i):
-        print("*", end = "")
+n = 4 # 줄 개수
+for i in range(1, n+1): # 1~n까지 반복
+    # i번째 줄에 대한 내용
+    # 공백 출력
+    for j in range(n-i): # n-i개의 공백이 출력
+        print(" ", end="")
+        # ex. 1번째 줄: n-1, / 2번째 줄: n-2 / .. 4번째 줄: n-4
+    # 별 출력
+    for k in range(2*i-1): # 2*i-1개의 별 출력
+        print("*", end="")
+
+    # 내부포문이 종료되는 시점
     print()
 
-# 실습 5 ??
-for i in range(4):
-    for j in range(7):
+# 실습 5
+n = 5 # 줄 개수
+
+# 윗 삼각형 (3줄) -> 2+1 5//2
+for i in range(1, (n//2) + 2): # 1 ~ 3 1부터 N//2+1 까지 반복
+    # 공백 출력력
+    for j in range(0, (n//2) + 1 - i): # N//2 + 1 - 줄번호
+        print(" ", end="")
+
+    # 별 출력
+    for k in range(0, 2 * i - 1):
         print("*", end = "")
+    
+    print()
+
+# 아래 삼각형(2줄) -> 2 -> 5//2
+for i in range(n//2, 0, -1): # N//2부터 1까지 반복
+    # 공백 출력
+    for j in range(0, (n//2) + 1 - i): # N//2 + 1 - 줄번호
+        print(" ", end="")
+
+    # 별 출력
+    for k in range(0, 2 * i - 1):
+        print("*", end = "")
+    
     print()
