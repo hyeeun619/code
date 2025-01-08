@@ -12,13 +12,14 @@ print(squares2)
 even_squares = [x**2 for x in range(1, 6) if x % 2 == 0]
 print(even_squares)
 
+"""
+
 # 실습 1
 
 num = int(input("몇단을 출력할까요?"))
 for i in range(1,10):
     print(f"{num}x{i}={num*i}")
     
-"""
 # 실습 2
 num = int(input("어디까지 계산할까요? :")) # 9
 total = 0
@@ -41,6 +42,6 @@ for i in student_dic.values():
     eng += i[1]
     math += i[2]
 
-print(f"국어: {kor/3}점, 영어 {eng/3}점, 수학 {math/3}점")
+print(f"국어: {kor/3: .2f}점, 영어 {eng/3: .2f}점, 수학 {math/3: .2f}점")
 
-# print(range(1, 10)) # 1 ~ 9
+# 실습3 다른 방법
