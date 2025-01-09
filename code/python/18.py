@@ -67,6 +67,36 @@ numbers5 = (list(filter(numbers3, numbers4)))
 print(list(filter(numbers3,numbers4)))
 print(f"{n}의 배수의 개수: {len(numbers5)}")
 
+# 실습 (함수만들기, 다른방법)
+def count(num):
+    lists = [i for i in range(1, 31) if i % num == 0]
+    counts = len(lists)
+
+    return (lists, counts)
+
+n = 3 # 배수
+my_lists, my_counts = count(n)
+print(f"{n}의 배수 목록 : {my_lists}")
+print(f"{n}의 개수: {my_counts}")
+
+# print(count(n)) # ([3, 6, 9, 12, 15, 18, 21, 24, 27, 30], 10)
+
+# 실습 (함수만들기, 다른방법)
+def count(num):
+    # 중첩함수 - 해당 함수 안에서만 호출 가능능
+    def check(x): # num의 배수인지를 검사하는 함수수
+        return x % num == 0
+    lists = list(filter(check, range(1, 31)))
+
+
+    return (lists, len(lists))
+
+n = 6
+my_lists, my_counts = count(n)
+print(f"{n}의 배수 목록 : {my_lists}")
+print(f"{n}의 개수: {my_counts}")
+
+
 # 선택 실습 max(),min() 내장 함수 직접 구현해보기
 # 버전 1: 매개변수가 2개만 들어온다고 가정
 # 버전 2: 매개변수가 n개가 들어올 수 있음을 가정
