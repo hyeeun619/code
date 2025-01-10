@@ -2,7 +2,7 @@
 number = [1, 2, 3, "Hello","Pyhton"]
 print(number) # [1, 2, 3, 'Hello', 'Pyhton']
 
-# 인덱싱 (Indexing) : 인덱스 번호로 요소를 추출하는 행위위
+# 인덱싱 (Indexing) : 인덱스 번호로 요소를 추출하는 행위
 print(number[3]) # Hello
 print(number[0]) # 1
 # print(number[100]) # IndexError: list index out of range (인덱스 범위 벗어남)

@@ -1,6 +1,6 @@
 # 람다식
 
-def add(x, y): # 일반 함수수
+def add(x, y): # 일반 함수
     return x + y
 
 print(add(3, 4))
@@ -63,3 +63,8 @@ print(list(filter(lambda x: x % 2 == 0, numbers2)))  # 람다식
 
 even_squared_nums = list(map(lambda x : x**2 ,filter(lambda x : x % 2 == 0, numbers2)))
 print(even_squared_nums)
+
+def test():
+    print("하이")
+result = test() # 하이
+print(result) # None
