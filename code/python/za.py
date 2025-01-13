@@ -55,12 +55,3 @@ def add_drink(drink):
 # remove_drink : 음료수를 제거하는 함수
 def remove_drink(drink):
     vending_machine
-
-
-    
-
-
-
-
-
-
