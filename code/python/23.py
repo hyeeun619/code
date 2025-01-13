@@ -75,8 +75,3 @@ print(super.show_info())
 #         self.al = 0
 #     def a1(self, hour):
 #         self._hour = hour
-
-
-
-
-    
